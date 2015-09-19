@@ -1,7 +1,8 @@
+/node_modules/browser-sync
 /node_modules/gulp
 /node_modules/gulp-autoprefixer
 /node_modules/gulp-jshint
 /node_modules/gulp-less
 /node_modules/gulp-load-plugins
-/node_modules/gulp-minift-css
+/node_modules/gulp-minify-css
 /node_modules/gulp-uglify

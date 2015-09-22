@@ -1,4 +1,4 @@
-/config
+/config/config.js
 /node_modules/browser-sync
 /node_modules/gulp
 /node_modules/gulp-autoprefixer

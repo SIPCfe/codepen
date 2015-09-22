@@ -247,7 +247,7 @@ select[size][multiple] {
  * body字体等设置, 参照淘宝网
  */
 body {
-  font: 12px/1.5 tahoma,arial,'Hiragino Sans GB',\5b8b\4f53,sans-serif;  
+  font: 14px/1.5 "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", "WenQuanYi Micro Hei", sans-serif;  
 }
 /*
  * 布局：栅格系统  g-

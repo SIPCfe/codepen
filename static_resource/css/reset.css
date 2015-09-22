@@ -1,11 +1,11 @@
 /*
- * 全局字体设置，基准字号设置为 62.5%，也就是 10px，现在 1rem = 10px
+ * 全局字体设置，基准字号设置为 62.5%，10px = 1em = 100% = 8pt
  */
 html {
 	font-size: 62.5%;
-	-ms-text-size-adjust: 100%;
-  	-webkit-text-size-adjust: 100%;
-  	text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+  	      text-size-adjust: 100%;
 }
 /*
  * 去除默认外边距
@@ -17,8 +17,8 @@ p, hr,
 h1, h2, h3, h4, h5, h6, pre,
 form, thead, tbody, tfoot, th, td, input, textarea,
 fieldset, legend, optgroup,blockquote, figure, menu {
-    margin:0;
-    padding:0;
+  margin:0;
+  padding:0;
 }
 /*
  * 修复HTML5标签错误显示
@@ -36,7 +36,7 @@ menu,
 nav,
 section,
 summary {
-  	display: block;
+  display: block;
 }
 /*
  * 修复IE8-9新元素显示错误
@@ -51,8 +51,8 @@ video {
  * 隐藏不支持controls的标签
  */
 audio:not([controls]) {
-  	display: none;
-  	height: 0;
+  display: none;
+  height: 0;
 }
 /*
  * 连接修复，去掉背景 outline，获取焦点框
@@ -69,21 +69,21 @@ a:hover {
  * 去掉列表前的标识, li会继承
  */
 ul, ol {
-    list-style-type: none;
-    list-style-image: none;
+  list-style-type: none;
+  list-style-image: none;
 }
 /*
  * 修正attr标签没有下划线问题
  */
 abbr[title] {
-  	border-bottom: 1px dotted;
+  border-bottom: 1px dotted;
 }
 /*
  *  修正部分语义化标签显示问题
  */
 b,
 strong {
-  	font-weight: bold;
+  font-weight: bold;
 }
 dfn {
 	font-style: italic;
@@ -97,61 +97,61 @@ h3,
 h4,
 h5,
 h6 {
-  	font-size: 100%;
-  	font-weight: 500;
+  font-size: 100%;
+  font-weight: 500;
 }
 mark {
-  	background: #ff0;
-  	color: #000;
+  background: #ff0;
+  color: #000;
 }
 /*
  * 防止sub和sup影响行高
  */
 sub,
 sup {
-  	font-size: 75%;
-  	line-height: 0;
-  	position: relative;
-  	vertical-align: baseline;
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
 }
  
 sup {
-  	top: -0.5em;
+  top: -0.5em;
 }
  
 sub {
-  	bottom: -0.25em;
+  bottom: -0.25em;
 }
 /*
  * 其他设置
  */
 img, iframe {
-  	border: 0;
+  border: 0;
 }
 svg:not(:root) {
-  	overflow: hidden;
+  overflow: hidden;
 }
 figure {
-  	margin: 1em 40px;
+  margin: 1em 40px;
 }
 hr {
-  	box-sizing: content-box;
-  	height: 0;
+  box-sizing: content-box;
+  height: 0;
 }
 /*
  * 移除单元格间距让其边重合 
  */
 table {
-  	border-collapse:collapse;
-  	border-spacing:0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 /*
  * 定义各浏览器显示一致的样式
  */
 fieldset {
-    border: 1px solid #c0c0c0;
-    margin: 0 2px;
-    padding: 0.35em 0.625em 0.75em;
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
 }
 /*
  * 1. 修正所有浏览器中字体不继承的问题
@@ -163,11 +163,11 @@ button,
 input,
 select,
 textarea {
-    font-family: inherit; 
-    font-size: 100%; 
-    margin: 0; 
-    vertical-align: baseline; 
-    *vertical-align: middle; 
+  font-family: inherit; 
+  font-size: 100%; 
+  margin: 0; 
+  vertical-align: baseline; 
+  *vertical-align: middle; 
 }
 
 
@@ -176,7 +176,7 @@ textarea {
  */
 input,
 button {
-    *overflow: visible;
+  *overflow: visible;
 }
 
 /*
@@ -184,7 +184,7 @@ button {
  */
 button[disabled],
 input[disabled] {
-    cursor: default;
+  cursor: default;
 }
 /**
  * 1. 修正 IE 8/9 box-sizing 被设置为「content-box」的问题
@@ -193,10 +193,10 @@ input[disabled] {
  */
 input[type="checkbox"],
 input[type="radio"] {
-    box-sizing: border-box;
-    padding: 0;
-    *height: 13px;
-    *width: 13px;
+  box-sizing: border-box;
+  padding: 0;
+  *height: 13px;
+  *width: 13px;
 }
 
 /**
@@ -204,10 +204,10 @@ input[type="radio"] {
  * 2. 修正 Safari 5 和 Chrome 中「box-sizing」被设置为 「border-box」的问题
  */    
 input[type="search"] {
-    -webkit-appearance: textfield;
-    -moz-box-sizing: content-box;
-    -webkit-box-sizing: content-box;
-    box-sizing: content-box;
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box;
+     -moz-box-sizing: content-box;
+          box-sizing: content-box;
 }
 
 /*
@@ -215,8 +215,8 @@ input[type="search"] {
  */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
-    border:0;
-    padding:0;
+  border:0;
+  padding:0;
 }
 /*
  * 1. 让FF,S5,Chrome下的textarea只能纵向拉伸高度, 避免因拉伸而影响布局
@@ -224,15 +224,15 @@ input::-moz-focus-inner {
  * 3. 默认textarea与文本baseline对齐，导致文本沉在下面比较难看，这里统一与文本顶对齐
  */
 textarea {
-    resize: vertical;
-    overflow: auto;
-    vertical-align: top;
+  resize: vertical;
+  overflow: auto;
+  vertical-align: top;
 }
 /*
  * label 元素给予手型，暗示此处可点击
  */
 label {
-    cursor: pointer;
+  cursor: pointer;
 }
 /*
  * 统一 select 样式, Firefox 中有 padding:1px 0
@@ -240,6 +240,50 @@ label {
 select[size],
 select[multiple],
 select[size][multiple] {
-    border: 1px solid #AAA;
-    padding:0;
+  border: 1px solid #AAA;
+  padding:0;
+}
+/*
+ * body字体等设置, 参照淘宝网
+ */
+body {
+  font: 12px/1.5 tahoma,arial,'Hiragino Sans GB',\5b8b\4f53,sans-serif;  
+}
+/*
+ * 布局：栅格系统  g-
+ */
+
+/*
+ * 功能类布局 f-
+ */
+.f-clearfix:before,
+.f-clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.f-left {
+  float:left;
+}
+.f-right {
+  float:right;
+}
+/*
+ * 元素隐藏
+ */
+.f-hide {
+    display: none !important;
+    visibility: hidden !important;
+}
+/*
+ * 文字溢出显示省略号
+ */
+.fn-text-ellipsis {
+  display: block;
+  white-space: nowrap;
+  word-wrap: normal;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  text-align: left;
 }

@@ -20,12 +20,12 @@ gulp.task("js", function() {
 			   .pipe(gulp.dest("./js"));
 })
 gulp.task("clean", function() {
-	del(['./styles/**/*.css']);
+	//del(['./styles/**/*.css']);
 })
 gulp.task('serve', ['less', 'js'], function() {
     Browsersync.init({
-        proxy: "http://127.0.0.1:3000"
+        proxy: "http://127.0.0.1:80"
     });
     gulp.watch("./static_resource/less/*.less", ['less']);
-    gulp.watch("views/**/*.jade").on('change', reload);
+    gulp.watch("./application/views/**/*.jade").on('change', reload);
 });
